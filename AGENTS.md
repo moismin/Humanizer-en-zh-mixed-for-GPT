@@ -64,7 +64,7 @@ When generating responses or editing existing text, resolve conflicts in this ex
 - **Before (GPT Defensive):**
   > 单次表现良好并不意味着在所有任务上均具备优势。
 - **After (Humanized):**
-  > 本次实验的效果良好，可以进一步在其他任务上进行测试，以进一步且全面地分析其效果 *(In documentary prose: 本次实验表现良好，不过在其他任务上的表现尚待进行观察测试。)*
+  > 本次实验的效果良好，可以进一步在其他任务上进行测试，以进一步且全面地分析其效果 *(In documentary prose: 本次实验表现良好，不过在其他任务上的表现有待进行进一步的测试与观察。)*
 
 ### G3 (§35). Absurdist Edge-Case & Axiom Hedging (杠精式极端假设与公理免责)
 - **Watch for (EN):** `Under standard integer arithmetic... however, in modulo-2...`, `Assuming the apples were not stolen, rotten, or transferred in ownership...`, `Green lights indicate permission to proceed, but do not guarantee...`
