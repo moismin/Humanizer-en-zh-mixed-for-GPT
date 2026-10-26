@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "humanizer-en-zh-mixed-4gpt",
+  "description": "Rewrite AI-sounding English, Chinese, and EN-ZH mixed prose and eradicate GPT-style defensive pedantry while preserving facts, epistemic boundaries, and the writer's voice.",
+  "version": "1.0.0",
+  "author": {
+    "name": "moismin",
+    "url": "https://github.com/moismin"
+  },
+  "homepage": "https://github.com/moismin/Humanizer-en-zh-mixed-4GPT",
+  "repository": "https://github.com/moismin/Humanizer-en-zh-mixed-4GPT",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanize", "bilingual", "anti-gpt-pedantry", "prose", "style"],
+  "skills": ["./"]
+}

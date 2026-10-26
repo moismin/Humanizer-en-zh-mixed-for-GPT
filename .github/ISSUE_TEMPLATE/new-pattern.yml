@@ -1,0 +1,24 @@
+name: New tell / 新增 AI 或 GPT 防御痕迹
+description: A sign of AI writing or GPT defensive pedantry that no current pattern catches.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: before
+    attributes:
+      label: Example (Before) / 改写前示例
+      description: Real text that shows the tell. Remove anything private.
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: How a person would write it (After) / 自然的人类表达
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why no current pattern covers it / 为何现有 36 条未覆盖
+      description: Name the closest existing pattern and say why it misses this.
+    validations:
+      required: true

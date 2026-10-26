@@ -1,0 +1,33 @@
+name: Rewrite problem / 改写质量或边界问题
+description: A rewrite kept an AI/GPT tell, changed meaning, added a fact, or over-edited.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What went wrong / 问题类型
+      options:
+        - A tell or GPT defensive caveat survived the rewrite / 残留了 AI 味或 GPT 防御废话
+        - The rewrite added or dropped a fact or condition / 编造了事实或丢失了限定条件
+        - The rewrite changed text that was already fine / 过度修改了原本通顺的文字
+        - Something else / 其他问题
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input text / 输入文本
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / 实际输出
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should have done / 期望改写
+    validations:
+      required: true

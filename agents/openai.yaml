@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanizer (EN+ZH & Anti-GPT)"
+  short_description: "Make EN/ZH AI text sound human and eradicate GPT defensive pedantry"
+  default_prompt: "Use $humanizer-en-zh-mixed-4gpt to rewrite this text in a natural human voice without GPT defensive caveats or changing its facts."
