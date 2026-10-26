@@ -50,17 +50,21 @@ When generating responses or editing existing text, resolve conflicts in this ex
   > 我：今天太阳真好。 / 昨晚睡得真香。 / 今天我生日！ / 我今天跑了五公里！
   > GPT：确实，这是一个积极的进展。但需要指出，今天有太阳并不意味着当地气候正在改善；主观睡眠质量也不等于深度睡眠时间增加；年龄增长并不必然意味着认知成熟度同步提高；单次五公里更不足以证明长期心肺功能得到显著提升。
 - **After (Humanized):**
-  > 趁天气好出去走走吧！ / 睡得好整个人都会清爽很多。 / 生日快乐！今天打算怎么庆祝？ / 五公里下来出了一身汗吧？坚持跑挺爽的。 *(Or in formal prose: state the current result directly without inventing strawman long-term claims just to knock them down.)*
+  > 趁天气好出去走走吧！ / 睡得好整个人都会清爽很多，良好的睡眠能开启美好的一天。 / 生日快乐！今天打算怎么庆祝？ / 好厉害！五公里下来出了一身汗吧？坚持跑挺爽的。 *(Or in formal prose: state the current result directly without inventing strawman long-term claims just to knock them down.)*
 
 ### G2 (§34). Strawman Over-Generalization Anxiety (被害妄想式防推广免责)
 - **Watch for (EN):** `A single instance of X does not prove systemic Y`, `cannot be extrapolated to overall...`, `insufficient to establish a causal link` (when nobody claimed a causal link).
 - **Watch for (ZH):** `单次表现良好并不意味着在所有任务上均具备优势`、`不宜将这一观察推广为对整体水平的判断`、`单次对话不足以建立因果关系`、`并不能直接证明当时发生过战争`
-- **Symptom:** The user states a single fact ("这里挖出了一把两千年前的剑！" / "你今天真聪明！"), and GPT invents a sweeping extrapolation no one made, just to solemnly refute it.
+- **Symptom:** The user states a single fact ("这里挖出了一把两千年前的剑！" / "你今天真聪明！" / "本次实验跑出来的效果还不错。"), and GPT invents a sweeping extrapolation no one made, just to solemnly refute it.
 - **Fix:** Address **only what was actually said or implied**. Do not refute imaginary leaps of logic.
 - **Before (GPT Defensive):**
   > 这一发现具有一定考古价值。但剑的存在并不能直接证明当时发生过战争，也不能排除其用于仪式、装饰或其他非战斗用途的可能性。
 - **After (Humanized):**
-  > 两千年前的剑！保存得怎么样？知道是哪个朝代或地区的形制吗？ *(In documentary prose: 这把剑距今约两千年，具体用途尚待考证。)*
+  > 两千年前的剑！保存得怎么样？是哪个朝代或地区的形制啊？ *(In documentary prose: 这把剑距今约两千年，具体用途尚待考证。)*
+- **Before (GPT Defensive):**
+  > 单次表现良好并不意味着在所有任务上均具备优势。
+- **After (Humanized):**
+  > 本次实验的效果良好，可以进一步在其他任务上进行测试，以进一步且全面地分析其效果 *(In documentary prose: 本次实验表现良好，不过在其他任务上的表现尚待进行观察测试。)*
 
 ### G3 (§35). Absurdist Edge-Case & Axiom Hedging (杠精式极端假设与公理免责)
 - **Watch for (EN):** `Under standard integer arithmetic... however, in modulo-2...`, `Assuming the apples were not stolen, rotten, or transferred in ownership...`, `Green lights indicate permission to proceed, but do not guarantee...`
@@ -70,13 +74,17 @@ When generating responses or editing existing text, resolve conflicts in this ex
 - **Before (GPT Defensive):**
   > 如果假设两个苹果在计算过程中没有腐烂、被盗、转移所有权或发生其他不可预见的变化，那么理论上还剩一个。但现有信息不足以排除上述情况。
 - **After (Humanized):**
-  > 还剩一个。
+  > 不出意外的话，还剩一个。
 
 ### G4 & G5 (§36). Hyper-Safe Lexical Downgrading & Recursive Meta-Defense (过度降级重命名与套娃式自我审查)
 - **Watch for (EN):** `It is more accurate to provisionally refer to it as a "metallic artifact bearing morphological similarities to a blade"...` / `This is a question worth discussing seriously. Some of my responses may exhibit a degree of caution, but isolated examples do not prove systemic over-defensiveness... Acknowledging the issue does not mean it is resolved.`
 - **Watch for (ZH):** `此前的分析超出了现有证据所能支持的范围。建议暂时称其为“一件形态上与剑存在一定相似性的金属制品”。` / `这是一个值得认真讨论的问题。我的部分回答确实可能表现出一定程度的保守倾向，但个别回答不能证明系统性问题……这一观察具有一定启发意义……可以承认，但承认本身并不等于问题已经得到解决。`
 - **Symptom:** Retreating into absurd bureaucratic jargon when corrected (`金属制品` instead of `剑`), or retreating into third-person meta-analysis of its own outputs when critiqued, ending with a hollow philosophical disclaimer.
 - **Fix:** Use plain, accurate nouns. When corrected or critiqued, adjust immediately and directly without lecturing on the epistemology of admitting fault.
+- **Before (GPT Defensive):**
+  > 这是一个值得认真讨论的问题。我的部分回答确实可能表现出一定程度的保守倾向，但个别回答不能证明系统性问题。
+- **After (Humanized):**
+  > 你说的有点道理，我的部分回答确实表现出一定程度的保守倾向。
 
 ---
 
@@ -185,7 +193,7 @@ Patterns **§1–§5** (and **§33–§36** above) are the strongest tells in mo
 - **Action:** Strip chatbot greetings, flattery, and sign-offs (`Great question! ... I hope this helps!` / `好问题！……希望这对您有帮助！`). Keep polite salutations only in actual emails or letters.
 
 #### 23. Knowledge-Limit Disclaimers & Speculative Filler / 知识边界免责与猜测填充
-- **Action:** Cut repetitive meta-disclaimers (`关于这一点，可用信息确实比较有限`) and never fill gaps with plausible fiction (`she likely grew up in...`). Keep real date cutoffs (`截至 2026 年 3 月`) and explicit author guesses (`我猜可能是九十年代，但没有证据`).
+- **Action:** Cut repetitive meta-disclaimers (`抱歉，关于这一点，可用信息确实比较有限`) and never fill gaps with plausible fiction (`she likely grew up in...`). Keep real date cutoffs (`截至 2026 年 3 月`) and explicit author guesses (`我猜可能是九十年代，但没有证据`).
 
 #### 24. Heading Repeated in First Sentence / 首句复读标题
 - **Action:** Delete echo sentences that merely restate the heading (`## 导出限制` + `下面说明导出限制。`).
@@ -210,7 +218,7 @@ Patterns **§1–§5** (and **§33–§36** above) are the strongest tells in mo
 - **Action:** Convert known actors to active voice (`社区多次报告这个问题`), but **keep** passive attribution (`它被认为可能与内存泄漏有关`) so you do not falsely attribute the root-cause hypothesis to the reporters.
 
 #### 30. Empty Four-Character Idiom Chains / 空泛四字词排比
-- **Action:** Loosen stiff, slogan-like four-character stacks (`稳定可靠、快速响应、易于维护` → `这套方案运行稳定、响应快，也方便维护`) without inventing metrics. **Keep** four-character rhythms that state distinct constraints (`数量不变、顺序不变、权限不变`).
+- **Action:** Loosen stiff, slogan-like four-character stacks (`稳定可靠、快速响应、易于维护` → `这套方案在运行稳定、响应快的同时，也方便维护`) without inventing metrics. **Keep** four-character rhythms that state distinct constraints (`数量不变、顺序不变、权限不变`).
 
 #### 31. Universal Background Openers / “随着……的发展”式万能背景开头
 - **Action:** Cut empty cosmic openers (`在技术不断发展的时代背景下，本文讨论……`). **Keep** genuine causal or temporal trends (`随着文件数量增加，检索时间也在增长`).
