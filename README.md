@@ -204,6 +204,6 @@ npx skills add https://github.com/moismin/Humanizer-en-zh-mixed-4GPT.git --globa
 - [op7418/Humanizer-zh (2026-09-23)](https://github.com/op7418/Humanizer-zh)：中文事实保真约束、F 组中文补充检查点与测试基准。
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) & [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup)。
 - [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop)。
-- **《GPT 防御性笑话大全》（1–10 经典场景）**：Group G（§33–§36）针对 GPT 过度防御与杠精式免责声明的专项治理来源。
+- **《GPT 防御性笑话大全》（1–10 经典场景）**： [GPT防御性笑话大全](https://xhslink.cn/o/6QiP6axqYnj)Group G（§33–§36）针对 GPT 过度防御与杠精式免责声明的专项治理来源。
 
 遵循 [MIT License](LICENSE)。
