@@ -1,4 +1,4 @@
-# Humanizer-en-zh-mixed-for-GPT：中英双语润色与专治 GPT“防御性笑话”特供版 Skill
+# Humanizer-en-zh-mixed-for-GPT6.1sol：中英双语润色与专治 GPT“防御性笑话”特供版 Skill
 
 将英文版 [blader/humanizer v3.1.0](https://github.com/blader/humanizer)、中文版 [op7418/Humanizer-zh (2026-09-23)](https://github.com/op7418/Humanizer-zh) 与 **《GPT 防御性笑话大全》专项去杠精规则**深度整合为一体的双语 Agent Skill。
 
